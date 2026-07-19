@@ -4,13 +4,13 @@ A classic number-merging game. Slide tiles on a 4×4 board so matching numbers c
 
 ## How to play
 
-- Each swipe slides every tile as far as it can in that direction.
-- **Two tiles with the same number** merge into one tile worth twice as much (for example 2 + 2 → 4, 4 + 4 → 8).
+- Each swipe slides every tile smoothly in that direction, with slide and merge animations.
+- **Two tiles with the same number** merge into one tile worth twice as much (for example 2 + 2 → 4, 4 + 4 → 8), and the merge is added to your score.
 - After a successful move, a new tile appears in a random empty cell (usually a **2**, sometimes a **4**).
 - The game ends when the board is full and no more merges are possible.
 - Reaching **2048** is the goal; you can also keep going for even larger tiles.
 
-The sidebar **best** value is the highest tile you have ever reached (saved on this device, so it survives a refresh).
+The **Score** at the top is for the current round. **Best** is the highest score you have ever reached (saved on this device, so it survives a refresh).
 
 ## Controls
 
@@ -52,9 +52,9 @@ When there are no empty cells and no adjacent matching tiles to merge, the round
 
 ## Start a game
 
-1. Open the page and play (two tiles appear at the start)  
-2. Move with arrow keys, WASD, swipes, or the direction pad  
-3. Go for 2048 and beat your best tile  
-4. Stuck? Hit **New Game** and try again  
+1. Open the page and play (two tiles appear at the start)
+2. Move with arrow keys, WASD, swipes, or the direction pad
+3. Go for 2048 and beat your high score
+4. Stuck? Hit **New Game** and try again
 
 Good luck — keep those numbers climbing 🔢
