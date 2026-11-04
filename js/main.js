@@ -1,3 +1,4 @@
 createGridCells();
+initViewport();
 initBoard();
 initEventListeners();

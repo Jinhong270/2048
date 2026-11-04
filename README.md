@@ -50,6 +50,10 @@ When there are no empty cells and no adjacent matching tiles to merge, the round
 3. Avoid filling the board with small tiles too early — leave room to move.
 4. When one merge is not enough, plan a chain: 4 → 8 → 16 and so on.
 
+## Fit and embedding
+
+The whole game scales down to fit the visible area, so it never needs scrolling. Opened directly, it uses the size of its own window. When it is embedded in another page, it asks that page for the visible size with `{ type: "jh270:viewport-request" }` and follows the `{ type: "jh270:viewport", width, height }` messages it gets back. If the host never answers, it keeps using its own window size.
+
 ## Start a game
 
 1. Open the page and play (two tiles appear at the start)
