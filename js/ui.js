@@ -19,13 +19,13 @@ function hideAllDialogs() {
 function showWinDialog() {
     dialogOpen = true;
     winModal.style.display = 'flex';
-    announce('恭喜！你达到了2048！');
+    announce(t('dialog.win'));
 }
 
 function showGameOverDialog() {
     dialogOpen = true;
     gameOverModal.style.display = 'flex';
-    announce('游戏结束，没有可移动的格子了');
+    announce(t('dialog.gameOver'));
 }
 
 function announce(message) {
@@ -126,6 +126,7 @@ function initEventListeners() {
     document.getElementById('resetBtn').addEventListener('click', initBoard);
 
     window.addEventListener('keydown', (e) => {
+        if (e.target instanceof HTMLSelectElement) return;
         if (dialogOpen) {
             e.preventDefault();
             return;

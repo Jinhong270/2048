@@ -30,14 +30,20 @@ The **Score** at the top is for the current round. **Best** is the highest score
 
 > Tip: A new tile appears only when tiles actually move or merge. Empty swipes do nothing.
 
+## Languages
+
+The game defaults to **English (United States)** and also includes 简体中文, 繁體中文, Español, Français, Deutsch, 日本語, 한국어, Português (Brasil) and Русский. Use the language picker below the controls to switch; your choice is saved on this device.
+
+To add a language, copy `js/locales/en-US.js` to `js/locales/<code>.js`, translate the values, and add a matching `<script>` tag to `index.html` after the other locale scripts. Any missing text falls back to English (United States).
+
 ## Win and game over
 
 ### Reaching 2048
 
 After the congratulations prompt, you can:
 
-- **Keep playing**: chase higher tiles (4096, 8192…)
-- **New game**: clear the board and start over
+- **Keep Playing**: chase higher tiles (4096, 8192…)
+- **New Game**: clear the board and start over
 
 ### Game over
 

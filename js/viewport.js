@@ -55,6 +55,7 @@ function scheduleFit() {
 function initViewport() {
     window.addEventListener('resize', scheduleFit);
     window.addEventListener('orientationchange', scheduleFit);
+    document.addEventListener('localechange', scheduleFit);
     window.addEventListener('message', (event) => {
         if (window.parent === window || event.source !== window.parent) return;
         const data = event.data;
